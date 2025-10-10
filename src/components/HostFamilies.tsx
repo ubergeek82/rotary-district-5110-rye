@@ -81,7 +81,7 @@ const HostFamilies = () => {
         </div>
 
         {/* Host Family Types */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           <Card className="shadow-card hover:shadow-lg transition-all duration-300">
             <CardHeader className="text-center">
               <Heart className="h-12 w-12 text-rotary-red mx-auto mb-4" />
@@ -112,20 +112,6 @@ const HostFamilies = () => {
             </CardContent>
           </Card>
 
-          <Card className="shadow-card hover:shadow-lg transition-all duration-300">
-            <CardHeader className="text-center">
-              <Globe className="h-12 w-12 text-rotary-gold mx-auto mb-4" />
-              <CardTitle className="text-xl text-rotary-navy">Welcome Family</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground mb-4">
-                Help new students settle in and provide emergency support
-              </p>
-              <Badge variant="outline" className="text-rotary-gold border-rotary-gold">
-                Flexible
-              </Badge>
-            </CardContent>
-          </Card>
         </div>
 
         {/* Requirements */}
