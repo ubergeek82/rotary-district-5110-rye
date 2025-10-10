@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Welcome to <br />
-            <span className="text-rotary-gold">Rotary District 51110</span><br />
+            <span className="text-rotary-gold">Rotary District 5110</span><br />
             Youth Exchange
           </h1>
           

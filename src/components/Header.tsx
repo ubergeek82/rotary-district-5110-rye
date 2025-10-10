@@ -25,7 +25,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-rotary-navy">Rotary Youth Exchange</h1>
-              <p className="text-sm text-muted-foreground">District 51110</p>
+              <p className="text-sm text-muted-foreground">District 5110</p>
             </div>
           </div>
 

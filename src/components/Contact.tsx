@@ -46,7 +46,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "rye51110@rotary.org",
+      details: "rye5110@rotary.org",
       description: "Best for general inquiries"
     },
     {

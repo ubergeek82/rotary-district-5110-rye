@@ -112,7 +112,7 @@ const Volunteers = () => {
             <div className="absolute -bottom-6 -left-6 bg-rotary-red text-white p-6 rounded-lg shadow-hero max-w-xs">
               <Users className="h-6 w-6 mb-2" />
               <p className="font-semibold text-sm">
-                Join 50+ active volunteers in District 51110
+                Join 50+ active volunteers in District 5110
               </p>
             </div>
           </div>

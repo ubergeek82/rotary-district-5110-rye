@@ -17,7 +17,7 @@ const Footer = () => {
       { name: "Emergency Contacts", href: "#contact" }
     ],
     district: [
-      { name: "About District 51110", href: "#about" },
+      { name: "About District 5110", href: "#about" },
       { name: "Rotary Clubs", href: "#contact" },
       { name: "Leadership Team", href: "#contact" },
       { name: "Annual Reports", href: "#contact" }
@@ -37,7 +37,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Rotary Youth Exchange</h3>
-                <p className="text-sm text-white/80">District 51110</p>
+                <p className="text-sm text-white/80">District 5110</p>
               </div>
             </div>
             
@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-sm">
                 <Mail className="h-4 w-4 text-rotary-gold flex-shrink-0" />
-                <span>rye51110@rotary.org</span>
+                <span>rye5110@rotary.org</span>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Phone className="h-4 w-4 text-rotary-gold flex-shrink-0" />
@@ -118,7 +118,7 @@ const Footer = () => {
         <div className="border-t border-white/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-white/80">
-              © {currentYear} Rotary District 51110 Youth Exchange. All rights reserved.
+              © {currentYear} Rotary District 5110 Youth Exchange. All rights reserved.
             </div>
             
             <div className="flex items-center space-x-6">
