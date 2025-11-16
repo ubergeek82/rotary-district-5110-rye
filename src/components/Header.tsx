@@ -20,9 +20,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">RYE</span>
-            </div>
+            <img src="/rotary-logo.png" alt="Rotary International" className="w-12 h-12" />
             <div>
               <h1 className="text-xl font-bold text-rotary-navy">Rotary Youth Exchange</h1>
               <p className="text-sm text-muted-foreground">District 5110</p>
@@ -54,13 +52,14 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden"
+            className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6" style={{ animation: 'none' }} />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6" style={{ animation: 'none' }} />
             )}
           </button>
         </div>

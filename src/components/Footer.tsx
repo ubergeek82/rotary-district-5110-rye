@@ -32,9 +32,7 @@ const Footer = () => {
           {/* Organization Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">RYE</span>
-              </div>
+              <img src="/rotary-logo.png" alt="Rotary International" className="w-12 h-12" />
               <div>
                 <h3 className="text-xl font-bold">Rotary Youth Exchange</h3>
                 <p className="text-sm text-white/80">District 5110</p>
