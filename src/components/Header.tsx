@@ -6,7 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "About", href: "#about" },
+    { name: "About", href: "https://rotarydistrict5110.com/" },
     { name: "Exchange Programs", href: "#programs" },
     { name: "Host Families", href: "#host-families" },
     { name: "Volunteers", href: "#volunteers" },
@@ -45,8 +45,8 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="default" className="bg-primary hover:bg-primary/90">
-              Apply Now
+            <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
+              <a href="#programs">Apply Now</a>
             </Button>
           </div>
 
@@ -78,8 +78,8 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="default" className="bg-primary hover:bg-primary/90 w-full">
-                Apply Now
+              <Button asChild variant="default" className="bg-primary hover:bg-primary/90 w-full">
+                <a href="#programs">Apply Now</a>
               </Button>
             </nav>
           </div>

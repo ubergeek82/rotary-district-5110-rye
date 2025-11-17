@@ -6,6 +6,7 @@ import Volunteers from "@/components/Volunteers";
 import Calendar from "@/components/Calendar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <ScrollIndicator />
     </div>
   );
 };
