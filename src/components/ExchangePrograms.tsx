@@ -61,7 +61,7 @@ const ExchangePrograms = () => {
           {programs.map((program, index) => {
             const IconComponent = program.icon;
             return (
-              <Card key={program.id} className="shadow-card hover:shadow-lg transition-all duration-300 group">
+              <Card key={program.id} className="shadow-card hover:shadow-lg transition-all duration-300 group flex flex-col">
                 <CardHeader className="text-center pb-6">
                   <div className={`w-20 h-20 ${program.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <IconComponent className={`h-10 w-10 ${program.textColor}`} />
@@ -73,16 +73,26 @@ const ExchangePrograms = () => {
                     {program.subtitle}
                   </div>
                 </CardHeader>
-                
-                <CardContent className="space-y-6">
-                  <p className="text-muted-foreground text-center">
+
+                <CardContent className="flex flex-col flex-grow">
+                  <p className="text-muted-foreground text-center mb-6">
                     {program.description}
                   </p>
-                  
-                  <div className="flex justify-center space-x-8">
+
+                  <div className="flex justify-center space-x-8 mb-6">
                     <div className="text-center">
                       <Clock className="h-6 w-6 text-rotary-blue mx-auto mb-2" />
-                      <div className="text-sm font-medium">{program.duration}</div>
+                      <div className="text-sm font-medium">
+                        {program.id === 'ltep' ? (
+                          <>
+                            Academic Year
+                            <br />
+                            (10-11 months)
+                          </>
+                        ) : (
+                          program.duration
+                        )}
+                      </div>
                     </div>
                     <div className="text-center">
                       <Users className="h-6 w-6 text-rotary-blue mx-auto mb-2" />
@@ -90,7 +100,7 @@ const ExchangePrograms = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="space-y-3 mb-6">
                     <h4 className="font-semibold text-rotary-navy">Program Features:</h4>
                     <div className="grid grid-cols-2 gap-2">
                       {program.features.map((feature, idx) => (
@@ -102,12 +112,14 @@ const ExchangePrograms = () => {
                     </div>
                   </div>
 
-                  <Button 
-                    className={`w-full ${program.color} hover:opacity-90 ${program.textColor} transition-smooth`}
-                    size="lg"
+                  <a
+                    href={program.id === 'ltep' ? 'http://yehub.net/W11-obapp' : 'http://yehub.net/W11-stapp'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-full mt-auto h-11 rounded-md px-8 ${program.color} ${program.id === 'ltep' ? 'hover:!bg-secondary hover:!text-secondary-foreground' : 'hover:!bg-primary hover:!text-primary-foreground'} ${program.textColor} transition-smooth font-medium flex items-center justify-center`}
                   >
                     Apply for {program.subtitle}
-                  </Button>
+                  </a>
                 </CardContent>
               </Card>
             );
